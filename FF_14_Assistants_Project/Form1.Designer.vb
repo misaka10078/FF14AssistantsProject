@@ -30,6 +30,7 @@ Partial Class Form_Main
         Me.Button1 = New System.Windows.Forms.Button()
         Me.TextBox_Output = New System.Windows.Forms.TextBox()
         Me.TabPage_Settings = New System.Windows.Forms.TabPage()
+        Me.Button3 = New System.Windows.Forms.Button()
         Me.TabControl1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
         Me.TabPage_Log.SuspendLayout()
@@ -68,6 +69,7 @@ Partial Class Form_Main
         '
         'TabPage_Log
         '
+        Me.TabPage_Log.Controls.Add(Me.Button3)
         Me.TabPage_Log.Controls.Add(Me.CheckBox_Output_level)
         Me.TabPage_Log.Controls.Add(Me.Button1)
         Me.TabPage_Log.Controls.Add(Me.TextBox_Output)
@@ -82,7 +84,7 @@ Partial Class Form_Main
         'CheckBox_Output_level
         '
         Me.CheckBox_Output_level.AutoSize = True
-        Me.CheckBox_Output_level.Location = New System.Drawing.Point(357, 58)
+        Me.CheckBox_Output_level.Location = New System.Drawing.Point(357, 35)
         Me.CheckBox_Output_level.Name = "CheckBox_Output_level"
         Me.CheckBox_Output_level.Size = New System.Drawing.Size(96, 16)
         Me.CheckBox_Output_level.TabIndex = 3
@@ -118,6 +120,15 @@ Partial Class Form_Main
         Me.TabPage_Settings.Text = "设置"
         Me.TabPage_Settings.UseVisualStyleBackColor = True
         '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(416, 97)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(75, 23)
+        Me.Button3.TabIndex = 4
+        Me.Button3.Text = "Button3"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
         'Form_Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
@@ -142,4 +153,5 @@ Partial Class Form_Main
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents CheckBox_Output_level As CheckBox
+    Friend WithEvents Button3 As Button
 End Class
